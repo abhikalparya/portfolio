@@ -104,3 +104,80 @@ a{
   list-style: none;
 }
 
+/* Hero */
+
+.hero{
+  background-color: #111111;
+  position: relative;
+  z-index: -1;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1{
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  background:-webkit-linear-gradient(360deg, rgba(152,69,232,1) 0%, rgba(51,210,255,1) 25%, rgba(221,87,137,1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero p{
+  color: #ffffffb3;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+
+.hero h2{
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+
+@media screen and (min-width: 767px) {
+  /* Base */
+
+  .container, .container-medium{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Header */
+
+  .nav{
+    height: 5rem;
+  }
+
+  .nav-toggle, .nav-close{
+    display: none;
+  }
+
+  .nav-list{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .nav-menu{
+    margin-left: auto;
+  }
+
+  /* Hero */
+
+  .hero{
+    display: block;
+    padding: 13rem  0;
+  }
+
+  .hero p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
