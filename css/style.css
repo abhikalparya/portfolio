@@ -167,7 +167,7 @@ a{
   padding-bottom: 80px;
 }
 
-.experience h3{
+.experience h2{
   font-weight: 300;
   letter-spacing: .2rem;
 }
@@ -206,6 +206,7 @@ a{
   font-weight: 300;
   cursor: pointer;
   display: block;
+  
   letter-spacing: .1rem;
   font-size: 1.2rem;
   padding: 1rem  0.83rem;
@@ -267,6 +268,58 @@ a{
   z-index: 1;
 }
 
+/* Project */
+
+.featured-project .container-medium hr{
+  border-color: #c6c6c6;
+  margin-bottom: 50px;
+}
+
+.featured-project h2{
+  font-family: var(--font-primary);
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+.box-featured-projects{
+  margin-top: 30px;
+  display: grid;
+  gap: 20px 20px;
+}
+
+.box-featured-projects .project img{
+  width: 100%;
+  height: auto;
+}
+
+.head-project{
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.head-project h3{
+  font-family: var(--font-primary);
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 80%;
+}
+
+.box-featured-projects .project p{
+  margin-top: 10px;
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .05rem;
+  line-height: 1.3rem;
+}
+
+.box-featured-projects .project .p-tech{
+  color: #6cace4;
+}
+
 @media screen and (min-width: 767px) {
   /* Base */
 
@@ -307,7 +360,7 @@ a{
     text-align: justify;
   }
 
-  /* Experince */
+  /* Experience */
   .accordion-experience{
     width: 100%;
     color: rgba(48, 69, 92,1);
@@ -348,5 +401,23 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /* Project */
+
+  .box-featured-projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project{
+    cursor: pointer;
+  }
+
+  .project img{
+    transition: all .3s ease-in-out;
+  }
+
+  .project:hover img{
+    transform: scale(1.02)
   }
 }
