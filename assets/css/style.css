@@ -253,6 +253,10 @@ main {
     background: var(--bg-gradient-onyx);
     border-radius: 20px;
   }
+
+  .avatar-box img { 
+    border-radius: 20px;
+  }
   
   .info-content .name {
     color: var(--white-2);
@@ -724,9 +728,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
  @media (min-width: 450px) {
 
-  /* client */
-
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .avatar-box img { border-radius: 30px;}
 
   /* projects */
 
